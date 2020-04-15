@@ -1,0 +1,8 @@
+{
+    "code-runner.executorMapByGlob": {
+        "*.pyde": "java -jar processing-py.jar"
+    },
+    "python.linting.enabled": true,
+    "python.analysis.disabled": ["undefined-variable"]
+
+}

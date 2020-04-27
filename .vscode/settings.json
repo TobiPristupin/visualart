@@ -1,8 +1,13 @@
 {
     "code-runner.executorMapByGlob": {
-        "*.pyde": "java -jar processing-py.jar"
+        "*.pyde": "~/Programs/jre1.8.0_202/bin/java -jar processing-py.jar"
     },
     "python.linting.enabled": true,
-    "python.analysis.disabled": ["undefined-variable"]
+    "python.analysis.disabled": [
+        "undefined-variable"
+    ],
+    "files.associations": {
+    
+    }
 
 }

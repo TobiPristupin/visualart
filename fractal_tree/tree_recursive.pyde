@@ -6,10 +6,10 @@ color_purple = [161, 3, 252, 100]
 color_pink = [252, 3, 107, 100]
 length_multiplier = 0.67
 
+
 def setup():
     size(800, 600)
     noLoop()
-    
 
 def draw():
     background(51)
@@ -17,8 +17,11 @@ def draw():
     stroke(255)
     translate(width/2, height)
     tree(200)
+    
 
 def tree(l, depth=0):
+    global tx, ty
+
     if depth == max_depth:
         if depth != 0:
             c = random.choice([color_pink, color_purple])
@@ -38,6 +41,7 @@ def tree(l, depth=0):
     rotate(-angle)
     tree(l*length_multiplier, depth+1)
     popMatrix()
+
 
 
 def keyPressed():

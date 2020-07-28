@@ -10,6 +10,7 @@ wind = 0
 tx = 0
 ty = 1000
 
+
 def setup():
     size(800, 600)
     
